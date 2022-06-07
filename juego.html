@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Juego de la Horca</title>
+        <link rel="icon" href="./images/Logo.png">
+        <meta property="og:title" content="Juego Ahorcado">
+        <meta property="og:type" content="photo">
+        <meta property="og:description" content="Juego clásico del Ahorcado">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/stilojuego.css">
+    </head>
+
+    <body>
+
+        <div class="Fondo">
+            
+            <img class="logoImg" src="images/Logo.png" alt="logo">
+            <h1 class="title">Adivina que fruta es</h1>
+           
+            <canvas id="pantalla" width="960px" height="450px"> <!-- etiqueta del canvas con sus medidas en la pantalla -->
+                Tu navegador no soporta Canvas.
+            </canvas>
+            <!-- El boton que nos sirve para recargar la pagina y asi generar una nueva palabra y volver a jugar -->
+            <button class="boton" id="reset-game" type="reset" onclick="javascript:window.location.reload();">Volver a Jugar</button>
+            <button class="boton" id="volver-atras" onclick="location.href='./index.html'">Volver al inicio</button>
+        </div>
+    </body>
+
+    <footer>
+        <div class="redes">
+            <a  target="_blank"><img class="imgRedes" src="./images/github.svg" alt="Github"></a>
+            <a target="_blank"><img class="imgRedes" src="./images/linkedin.svg" alt="Linkedin"></a>
+        </div>
+        <div class="copyright">
+            <p> By Evelyn Yuliana Rodríguez Ortega © 2022</p>
+        </div>
+        
+    </footer>
+
+    <script src="./js/cryptography.js"></script>
+    
+</html>
